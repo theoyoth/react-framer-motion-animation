@@ -1,0 +1,34 @@
+.footerContainer{
+  width:100vw;
+}
+.footer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 50px 0 50px;
+}
+.copy p{
+  font-size: 10px;
+  opacity:.6;
+}
+.logoContainer{
+  display:flex;
+  justify-content: space-between;
+  width:160px;
+}
+.logoContainer a{
+  text-decoration:none;
+  color:whitesmoke;
+}
+
+@media screen and (max-width:768px) {
+  .footer{
+    padding:0 20px 0 20px;
+  }
+  .copy{
+    font-size: 10px;
+  }
+  .logoContainer{
+    width:100px;
+  }
+}

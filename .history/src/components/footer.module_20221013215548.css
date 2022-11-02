@@ -1,0 +1,8 @@
+.footerContainer{
+  width:100vw;
+  display:flex;
+  border:1px solid white;
+}
+.copy{
+  font-size: 10px;
+}

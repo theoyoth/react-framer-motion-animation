@@ -1,0 +1,15 @@
+.navbar{
+ position:relative;
+ width:100vw;
+ border:1px solid white;
+
+}
+.nav{
+  height:50px;
+  display:flex;
+
+}
+
+.logoImg{
+  width:100px;
+}

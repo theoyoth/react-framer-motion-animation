@@ -1,0 +1,108 @@
+.navbar{
+ width:100vw;
+ font-size: 14px;
+ overflow-x:hidden;
+}
+.nav{
+  padding:0 50px 0 50px;
+  height:100px;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  position: relative;
+}
+.logo{
+  position: relative;
+}
+.logo::before{
+  content:" ";
+  height:100px;
+  width:180px;
+  background-color:whitesmoke;
+  position:absolute;
+  top:-23px;
+  left:-50px;
+  z-index: 2;
+}
+.logoImg{
+  width:60px;
+  position:relative;
+  z-index: 10;
+}
+.navMenu{
+  width:300px;
+  display: flex;
+  justify-content: space-between;
+}
+.navItem{
+  list-style: none;
+}
+.navItem a{
+  text-decoration: none;
+  color:whitesmoke;
+}
+.humburgerMenu{
+  /* border:1px solid white; */
+  display: none;
+}
+.crossMenu{
+  display: none;
+}
+
+@media screen and (max-width:768px){
+  .nav{
+    padding:0 20px 0 20px;
+    position:relative;
+    z-index: 1;
+    overflow:hidden;
+  }
+  .navMenu{
+    position:absolute;
+    top:38px;
+    right:20px;
+    display:block;
+    text-align:center;
+    border:1px solid white;
+    background-color:black;
+    z-index: 10;
+  }
+  .navItem{
+    margin-block:4px;
+  }
+  .logoImg{
+    width:50px;
+    position:relative;
+    filter:invert(1);
+    z-index: 10;
+  }
+  .logo::before{
+    display: none;
+  }
+  .humburgerMenu{
+    display:block;
+  }
+  .humburgerMenu button{
+    background:transparent;
+    outline:none;
+    border:none;
+    cursor:pointer;
+  }
+  .humburgerMenuIcon{
+    color:whitesmoke;
+    font-size: 2rem;
+  }
+  .crossMenu{
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+  }
+  .crossMenu button{
+    background:transparent'
+    border:none;
+    outline:none;
+  }
+  .crossMenuIcon{
+    color:whitesmoke;font-size: 2rem;
+  }
+}

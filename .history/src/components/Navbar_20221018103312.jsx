@@ -1,0 +1,48 @@
+import { motion } from "framer-motion";
+import styles from "./navbar.module.css";
+
+const Navbar = () => {
+  const animateNavbar = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+    },
+  };
+  const animateLogo = {
+    hidden: {},
+    visible: {},
+  };
+  return (
+    <div className={styles.navbar}>
+      <motion.nav
+        className={styles.nav}
+        variants={animateNavbar}
+        initial="hidden"
+        animate="visible"
+      >
+        <div className={styles.logo}>
+          <motion.img
+            src="./images/logo.png"
+            alt="logo"
+            className={styles.logoImg}
+          />
+        </div>
+        <motion.ul className={styles.navMenu}>
+          <motion.li className={styles.navItem}>
+            <a href="#">HOME</a>
+          </motion.li>
+          <motion.li className={styles.navItem}>
+            <a href="#">PRODUCT</a>
+          </motion.li>
+          <motion.li className={styles.navItem}>
+            <a href="#">ABOUT</a>
+          </motion.li>
+        </motion.ul>
+      </motion.nav>
+    </div>
+  );
+};
+
+export default Navbar;

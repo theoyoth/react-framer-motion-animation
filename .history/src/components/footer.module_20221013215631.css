@@ -1,0 +1,13 @@
+.footerContainer{
+  width:100vw;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border:1px solid white;
+}
+.copy{
+}
+.copy p{
+  font-size: 10px;
+  opacity:.6;
+}

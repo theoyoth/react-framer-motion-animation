@@ -1,0 +1,24 @@
+.container{
+  width: 100vw;
+  height: 90vh;
+  color:whitesmoke;
+  border:1px solid white;
+}
+.imgLogo{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.nikeLogo{
+  width:600px;
+  filter:opacity(.4) blur(4px);
+}
+
+.mainContent{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.crShoes{
+  width:500px;
+}

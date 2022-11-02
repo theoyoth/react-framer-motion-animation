@@ -1,0 +1,93 @@
+.container{
+  width: 100vw;
+  height: 75vh;
+  color:whitesmoke;
+}
+.imgLogo{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.nikeLogo{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:600px;
+  filter:opacity(.4) blur(4px);
+  z-index: 2;
+}
+.nikeLogo::selection{
+  background:transparent;
+}
+
+.mainContent{
+  height:100%;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  align-items: center;
+  position:relative;
+  z-index: 10;
+  overflow: hidden;
+}
+.title h1{
+  transform:translateX(50px);
+  font-size: 4rem;
+  z-index: 10;
+  position:relative;
+}
+.crShoes{
+  width:750px;
+  transform:rotate(350deg) translateX(-50px);
+}
+.crShoes::selection {
+  background: transparent;
+}
+
+@media screen and (max-width:1257px){
+  .mainContent{
+    position: relative;
+  }
+  .title h1{
+    font-size: 3rem;
+  }
+  .crShoes{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) rotate(350deg);
+    width:600px;
+  }
+}
+@media screen and (max-width:1024px){
+  .mainContent{
+    position: relative;
+  }
+  .title h1{
+    font-size: 3rem;
+    text-shadow: 2px 1px 5px rgba(0,0,0,.8);
+  }
+  .crShoes{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) rotate(350deg);
+    width:500px;
+  }
+}
+@media screen and (max-width:500px){
+  .mainContent{
+    position: relative;
+  }
+  .title h1{
+    font-size: 3rem;
+    text-shadow: 2px 1px 5px rgba(0,0,0,.8);
+  }
+  .crShoes{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) rotate(350deg);
+    width:400px;
+  }
+}

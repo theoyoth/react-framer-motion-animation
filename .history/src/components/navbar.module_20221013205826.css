@@ -1,0 +1,25 @@
+.navbar{
+ position:relative;
+ width:100vw;
+ border:1px solid white;
+
+}
+.nav{
+  padding:20px;
+  height:50px;
+  display:flex;
+  justify-content:space-between;
+}
+.logo{
+  background-color:whitesmoke;
+}
+.logoImg{
+  width:50px;
+  height:100%;
+}
+.navMenu{
+  display: flex;
+}
+.navItem{
+  list-style: none;
+}

@@ -1,0 +1,28 @@
+.navbar{
+ position:relative;
+ width:100vw;
+ border:1px solid white;
+ font-size: 14px;
+}
+.nav{
+  padding:20px;
+  height:50px;
+  display:flex;
+  justify-content:space-between;
+}
+.logo{
+  height:100%;
+  background-color:whitesmoke;
+}
+.logoImg{
+  width:50px;
+}
+.navMenu{
+  width:300px;
+  border:1px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+.navItem{
+  list-style: none;
+}

@@ -1,0 +1,77 @@
+.container{
+  width: 100vw;
+  height: 75vh;
+  color:whitesmoke;
+}
+.imgLogo{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.nikeLogo{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:600px;
+  filter:opacity(.4) blur(4px);
+  z-index: 2;
+}
+.nikeLogo::selection{
+  background:transparent;
+}
+
+.mainContent{
+  height:100%;
+  padding:0 50px 0 50px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position:relative;
+  z-index: 10;
+  overflow: hidden;
+}
+.title h1{
+  font-size: 4rem;
+}
+.crShoes{
+  width:750px;
+  transform:rotate(350deg);
+}
+.crShoes::selection {
+  background: transparent;
+}
+
+/* @media screen and (max-width:1360px){
+  .crShoes{
+    width:750px;
+  }
+} */
+@media screen and (max-width:1257px){
+  .title h1{
+    font-size: 3.5rem;
+  }
+  .crShoes{
+    width:600px;
+  }
+}
+@media screen and (max-width:1024px){
+  .title h1{
+    font-size: 2.5rem;
+  }
+  .crShoes{
+    width:450px;
+  }
+}
+@media screen and (max-width:768px){
+  .title h1{
+    font-size: 2.5rem;
+  }
+  .crShoes{
+    width:400px;
+    border:1px solid white;
+  }
+  .crShoes img{
+    margin-left:-20px;
+  }
+}
